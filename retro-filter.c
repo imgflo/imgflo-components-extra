@@ -23,10 +23,10 @@
 
 enum_start (gegl_retro_filter_preset)
   enum_value (GEGL_RETRO_FILTER_PRESET_NONE, "none", "None")
-  enum_value (GEGL_RETRO_FILTER_PRESET_1977, "1977", "1977")
-  enum_value (GEGL_RETRO_FILTER_PRESET_BRANNAN, "brannan", "Brannan")
-  enum_value (GEGL_RETRO_FILTER_PRESET_GOTHAM, "gotham", "Gotham")
-  enum_value (GEGL_RETRO_FILTER_PRESET_NASHVILLE, "nashville", "Nashville")
+  enum_value (GEGL_RETRO_FILTER_PRESET_1977, "prog", "Prog")
+  enum_value (GEGL_RETRO_FILTER_PRESET_BRANNAN, "indie", "Indie")
+  enum_value (GEGL_RETRO_FILTER_PRESET_GOTHAM, "batcave", "Batcave")
+  enum_value (GEGL_RETRO_FILTER_PRESET_NASHVILLE, "country", "Country")
 enum_end (GeglRetroFilterPreset)
 
 property_enum (preset, _("Preset"),

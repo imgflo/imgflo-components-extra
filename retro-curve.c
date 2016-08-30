@@ -23,10 +23,10 @@
 
 enum_start (gegl_retro_curve_preset)
   enum_value (GEGL_RETRO_CURVE_PRESET_NONE, "none", "None")
-  enum_value (GEGL_RETRO_CURVE_PRESET_1977, "1977", "1977")
-  enum_value (GEGL_RETRO_CURVE_PRESET_BRANNAN, "brannan", "Brannan")
-  enum_value (GEGL_RETRO_CURVE_PRESET_GOTHAM, "gotham", "Gotham")
-  enum_value (GEGL_RETRO_CURVE_PRESET_NASHVILLE, "nashville", "Nashville")
+  enum_value (GEGL_RETRO_CURVE_PRESET_1977, "prog", "Prog")
+  enum_value (GEGL_RETRO_CURVE_PRESET_BRANNAN, "indie", "Indie")
+  enum_value (GEGL_RETRO_CURVE_PRESET_GOTHAM, "batcave", "Batcave")
+  enum_value (GEGL_RETRO_CURVE_PRESET_NASHVILLE, "country", "Country")
 enum_end (GeglRetroCurvePreset)
 
 property_enum (preset, _("Preset"),
