@@ -36,7 +36,9 @@ property_enum (preset, _("Preset"),
 
 #else
 
+#ifndef GEGL_OP_C_FILE
 #define GEGL_OP_C_SOURCE retro-filter.c
+#endif
 
 #include "gegl-plugin.h"
 
