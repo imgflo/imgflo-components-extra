@@ -761,7 +761,7 @@ gegl_op_class_init (GeglOpClass *klass)
   point_filter_class->process = process;
 
   gegl_operation_class_set_keys (operation_class,
-    "name",        "gegl:retro-curve",
+    "name",        "imgfloextra:retro-curve",
     "title",       _("Retro curve"),
     "categories",  "hidden",
     "description", _("Apply a preset curve to an image"),

@@ -80,7 +80,7 @@ do_setup (GeglOperation *operation)
 
     case GEGL_RETRO_FILTER_PRESET_1977:
       node = gegl_node_new_child (operation->node,
-                                  "operation", "gegl:retro-curve",
+                                  "operation", "imgfloextra:retro-curve",
                                   "preset", o->preset,
                                   NULL);
       self->nodes = g_list_prepend (self->nodes, node);
@@ -88,7 +88,7 @@ do_setup (GeglOperation *operation)
 
     case GEGL_RETRO_FILTER_PRESET_BRANNAN:
       node = gegl_node_new_child (operation->node,
-                                  "operation", "gegl:retro-curve",
+                                  "operation", "imgfloextra:retro-curve",
                                   "preset", o->preset,
                                   NULL);
       self->nodes = g_list_prepend (self->nodes, node);
@@ -96,20 +96,20 @@ do_setup (GeglOperation *operation)
 
     case GEGL_RETRO_FILTER_PRESET_GOTHAM:
       node = gegl_node_new_child (operation->node,
-                                  "operation", "gegl:retro-curve",
+                                  "operation", "imgfloextra:retro-curve",
                                   "preset", o->preset,
                                   NULL);
       self->nodes = g_list_prepend (self->nodes, node);
 
       node = gegl_node_new_child (operation->node,
-                                  "operation", "gegl:gray",
+                                  "operation", "imgfloextra:gray",
                                   NULL);
       self->nodes = g_list_prepend (self->nodes, node);
       break;
 
     case GEGL_RETRO_FILTER_PRESET_NASHVILLE:
       node = gegl_node_new_child (operation->node,
-                                  "operation", "gegl:retro-curve",
+                                  "operation", "imgfloextra:retro-curve",
                                   "preset", o->preset,
                                   NULL);
       self->nodes = g_list_prepend (self->nodes, node);
@@ -205,7 +205,7 @@ gegl_op_class_init (GeglOpClass *klass)
   operation_class->detect = detect;
 
   gegl_operation_class_set_keys (operation_class,
-    "name",        "gegl:retro-filter",
+    "name",        "imgfloextra:retro-filter",
     "title",       _("Retro Filter"),
     "categories",  "meta:color",
     "description", _("Apply a preset filter to an image"),
