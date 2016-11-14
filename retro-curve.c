@@ -38,6 +38,7 @@ property_enum (preset, _("Preset"),
 
 #define GEGL_OP_POINT_FILTER
 #define GEGL_OP_C_FILE "retro-curve.c"
+#define GEGL_OP_NAME imgfloextra_retro_curve
 
 #include "gegl-op.h"
 #include <math.h>

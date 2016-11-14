@@ -12,6 +12,8 @@
 #define IMGFLO_OP_NAME(orig) orig
 #endif
 
+#define GEGL_OP_NAME imgflo_example
+
 #include "gegl-op.h"
 
 static void prepare (GeglOperation *operation)

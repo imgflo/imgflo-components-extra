@@ -40,6 +40,10 @@ property_enum (preset, _("Preset"),
 #define GEGL_OP_C_SOURCE retro-filter.c
 #endif
 
+#ifndef GEGL_OP_NAME
+#define GEGL_OP_NAME imgfloextra_retro_filter
+#endif
+
 #include "gegl-plugin.h"
 
 struct _GeglOp
